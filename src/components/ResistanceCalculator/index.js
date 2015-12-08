@@ -55,11 +55,9 @@ class ResistanceCalculator extends Component {
                 <OhmageIndicator resistance={resistance} />
                 <ToleranceIndicator tolerance={tolerance} />
                 {bands.map((b, i) => {
-
                     const options = bandOptions.filter((b, j) => (
                         bandsConfig[i].omitOptions.indexOf(j) === -1
                     ));
-
                     return (
                         <BandSelector
                             options={options}
