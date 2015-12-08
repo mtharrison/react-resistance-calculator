@@ -1,0 +1,35 @@
+#container {
+	width: 300px;
+	border: 10px solid #efebe3;
+	padding: 30px;
+	background: #9c3;
+	background: #38342b;
+	margin: 30px auto;
+	color: #fff;
+	border-radius: 0px;
+	font-family: "Helvetica neue", Helvetica, Arial, sans-serif
+}
+#resistor-value {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 50px;
+	margin-top: 0px;
+}
+#tolerance-value {
+	text-align: center;
+	margin-top: 0px !important;
+	font-size: 21px;
+}
+.band-option {
+	text-align: center;
+	margin: 5px;
+}
+.band-option select {
+	width: 120px;
+	margin-left: 10px;
+}
+.reset-button {
+	margin-left: 120px;
+	margin-top: 20px;
+}
