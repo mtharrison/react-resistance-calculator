@@ -5,7 +5,7 @@ class BandSelector extends Component {
         super(props);
     }
     handleChange() {
-        this.props.onChange(this.props.band, this.refs.menu.value);
+        this.props.onChange(this.props.band, parseInt(this.refs.menu.value));
     }
     render(){
         const { band, options, value } = this.props;
@@ -20,6 +20,13 @@ class BandSelector extends Component {
             </div>
         );
     }
+};
+
+BandSelector.propTypes = {
+    onChange: React.PropTypes.func.isRequired,
+    band: React.PropTypes.number.isRequired,
+    options: React.PropTypes.array.isRequired,
+    value: React.PropTypes.number.isRequired
 };
 
 export default BandSelector;

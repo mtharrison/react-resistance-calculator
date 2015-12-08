@@ -74,4 +74,8 @@ class ResistanceCalculator extends Component {
     }
 };
 
+ResistanceCalculator.propTypes = {
+    config: React.PropTypes.object.isRequired
+};
+
 export default ResistanceCalculator;

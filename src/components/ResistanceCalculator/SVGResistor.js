@@ -19,4 +19,9 @@ const SVGResistor = ({ bands, bandOptions }) => {
     );
 };
 
+SVGResistor.propTypes = {
+    bands: React.PropTypes.array.isRequired,
+    bandOptions: React.PropTypes.array.isRequired
+};
+
 export default SVGResistor;

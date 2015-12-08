@@ -19,4 +19,8 @@ const OhmageIndicator = ({ resistance }) => {
     );
 };
 
+OhmageIndicator.propTypes = {
+    resistance: React.PropTypes.number.isRequired
+};
+
 export default OhmageIndicator

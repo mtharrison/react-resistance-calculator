@@ -13,4 +13,8 @@ const ToleranceIndicator = ({ tolerance }) => {
     );
 };
 
+ToleranceIndicator.propTypes = {
+    tolerance: React.PropTypes.number.isRequired
+};
+
 export default ToleranceIndicator;
