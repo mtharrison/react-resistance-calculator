@@ -30,7 +30,6 @@ class ResistanceCalculator extends Component {
             (1   * this.state.bands[2]));
     }
     updateBandState(band, value) {
-        debugger;
         const { bandOptions } = this.props.config;
         const { bands } = this.state;
         bands[band] = value;
