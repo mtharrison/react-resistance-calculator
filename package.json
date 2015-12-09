@@ -4,7 +4,7 @@
   "description": "A resistance calculator built with React",
   "scripts": {
       "build": "webpack",
-      "start": "webpack-dev-server --inline --progress --colors --content-base public/"
+      "start": "webpack-dev-server --inline --progress --colors"
   },
   "author": "Matt Harrison <hi@matt-harrison.com>",
   "license": "BSD-3-Clause",
