@@ -59,7 +59,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var config = {
-	    bandOptions: [{ tolerance: 0, color: "black", label: "None" }, { tolerance: 1, color: "brown", label: "Brown" }, { tolerance: 2, color: "red", label: "Red" }, { color: "orange", label: "Orange" }, { color: "yellow", label: "Yellow" }, { tolerance: 0.5, color: "green", label: "Green" }, { tolerance: 0.25, color: "blue", label: "Blue" }, { tolerance: 0.10, color: "violet", label: "Violet" }, { tolerance: 0.05, color: "grey", label: "Grey" }, { color: "white", label: "White" }, { tolerance: 5, color: "#FFD700", label: "Gold" }, { tolerance: 10, color: "#C0C0C0", label: "Silver" }],
+	    bandOptions: [{ value: 0, tolerance: 0, color: "black", label: "None" }, { value: 1, tolerance: 1, color: "brown", label: "Brown" }, { value: 2, tolerance: 2, color: "red", label: "Red" }, { value: 3, color: "orange", label: "Orange" }, { value: 4, color: "yellow", label: "Yellow" }, { value: 5, tolerance: 0.5, color: "green", label: "Green" }, { value: 6, tolerance: 0.25, color: "blue", label: "Blue" }, { value: 7, tolerance: 0.10, color: "violet", label: "Violet" }, { value: 8, tolerance: 0.05, color: "grey", label: "Grey" }, { value: 9, color: "white", label: "White" }, { value: 10, tolerance: 5, color: "#FFD700", label: "Gold" }, { value: 11, tolerance: 10, color: "#C0C0C0", label: "Silver" }],
 	    bands: [{ omitOptions: [10, 11] }, { omitOptions: [10, 11] }, { omitOptions: [10, 11] }, { omitOptions: [8, 9] }, { omitOptions: [3, 4, 9] }]
 	};
 
@@ -19729,6 +19729,7 @@
 	    }, {
 	        key: 'updateBandState',
 	        value: function updateBandState(band, value) {
+	            debugger;
 	            var bandOptions = this.props.config.bandOptions;
 	            var bands = this.state.bands;
 
@@ -19856,7 +19857,7 @@
 	                    options.map(function (o, i) {
 	                        return _react2.default.createElement(
 	                            "option",
-	                            { key: i, value: i },
+	                            { key: i, value: o.value },
 	                            o.label
 	                        );
 	                    })

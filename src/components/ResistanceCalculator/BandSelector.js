@@ -14,7 +14,7 @@ class BandSelector extends Component {
                 <label>Band {band + 1}</label>
                 <select ref="menu" value={value} onChange={::this.handleChange}>
                 {options.map((o, i) => (
-                    <option key={i} value={i}>{o.label}</option>
+                    <option key={i} value={o.value}>{o.label}</option>
                 ))}
                 </select>
             </div>
