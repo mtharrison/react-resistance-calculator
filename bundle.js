@@ -19729,7 +19729,6 @@
 	    }, {
 	        key: 'updateBandState',
 	        value: function updateBandState(band, value) {
-	            debugger;
 	            var bandOptions = this.props.config.bandOptions;
 	            var bands = this.state.bands;
 
